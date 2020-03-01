@@ -1,26 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/Movie.css'
-import { red, grey } from '@material-ui/core/colors';
+import { red } from '@material-ui/core/colors';
 
 import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
 import IconButton from '@material-ui/core/IconButton'
 
 
-function Movie({ title, year, poster, id, movies, onClick }) {
-  const [disabled, setDisabled] = useState(false);
-  const [color, setColor] = useState(red)
-
-
-
-
-
-  const disabledButton = (e) => {
-    e.persist()
-    setDisabled(true)
-    setColor(grey)
-
-  }
-
+function Movie({ title, year, poster, id, addingMovies }) {
 
   return (
     <div className='Mycontainer'>
@@ -36,11 +22,9 @@ function Movie({ title, year, poster, id, movies, onClick }) {
               data-id={id}
               color="inherit"
               aria-label="open drawer"
-              onClick={disabledButton}
-
-              disabled={disabled}
+              onClick={addingMovies}
             >
-              <FavoriteTwoToneIcon style={{ fontSize: 25, color: color[500] }} />
+              <FavoriteTwoToneIcon style={{ fontSize: 25, color: red[500] }} />
 
             </IconButton>
           </div>

@@ -5,14 +5,24 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(15),
+    marginRight: theme.spacing(40),
     marginLeft: theme.spacing(3),
+    [theme.breakpoints.down('sm')]: {
+      marginRight: theme.spacing(7),
+      marginLeft: 0,
+
+    },
+
   },
   title: {
     flexGrow: 1,
     display: 'none',
+
+    fontSize: '2rem',
+    fontFamily: 'Courgette',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
+
     },
   },
   search: {
@@ -22,7 +32,7 @@ const useStyles = makeStyles(theme => ({
     '&:hover': {
       backgroundColor: fade(theme.palette.common.white, 0.25),
     },
-    marginRight: 50,
+    marginRight: 40,
     width: '100%',
     [theme.breakpoints.up('sm')]: {
       marginLeft: theme.spacing(1),
