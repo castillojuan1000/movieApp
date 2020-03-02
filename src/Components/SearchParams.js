@@ -29,7 +29,7 @@ function SearchParams() {
 
   useEffect(() => {
 
-    axios.get(`http://www.omdbapi.com/?s=${value}&apikey=57c3c48f`)
+    axios.get(`https://www.omdbapi.com/?s=${value}&apikey=57c3c48f`)
       .then((data) => {
         const movieArray = data.data.Search;
         setMovies(movieArray)
