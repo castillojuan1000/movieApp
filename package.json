@@ -1,6 +1,6 @@
 {
-  "homepage": "https://castillojuan1000.github.io/movieApp",
   "name": "movieapp",
+  "homepage": "https://castillojuan1000.github.io/movieApp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
