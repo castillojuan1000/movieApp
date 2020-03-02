@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/castillojuan1000/movieApp/static/css/main.82d66f6e.chunk.css",
+    "main.js": "/castillojuan1000/movieApp/static/js/main.5a2e70ed.chunk.js",
+    "main.js.map": "/castillojuan1000/movieApp/static/js/main.5a2e70ed.chunk.js.map",
+    "runtime-main.js": "/castillojuan1000/movieApp/static/js/runtime-main.cddc31ef.js",
+    "runtime-main.js.map": "/castillojuan1000/movieApp/static/js/runtime-main.cddc31ef.js.map",
+    "static/js/2.b07de0ea.chunk.js": "/castillojuan1000/movieApp/static/js/2.b07de0ea.chunk.js",
+    "static/js/2.b07de0ea.chunk.js.map": "/castillojuan1000/movieApp/static/js/2.b07de0ea.chunk.js.map",
+    "index.html": "/castillojuan1000/movieApp/index.html",
+    "precache-manifest.efaab76a1570e0e7fbf9d2cd730d6418.js": "/castillojuan1000/movieApp/precache-manifest.efaab76a1570e0e7fbf9d2cd730d6418.js",
+    "service-worker.js": "/castillojuan1000/movieApp/service-worker.js",
+    "static/css/main.82d66f6e.chunk.css.map": "/castillojuan1000/movieApp/static/css/main.82d66f6e.chunk.css.map",
+    "static/js/2.b07de0ea.chunk.js.LICENSE.txt": "/castillojuan1000/movieApp/static/js/2.b07de0ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cddc31ef.js",
+    "static/js/2.b07de0ea.chunk.js",
+    "static/css/main.82d66f6e.chunk.css",
+    "static/js/main.5a2e70ed.chunk.js"
+  ]
+}
