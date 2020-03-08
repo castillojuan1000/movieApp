@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 
   },
   menuButton: {
-    marginRight: theme.spacing(15),
+    marginRight: theme.spacing(50),
     [theme.breakpoints.down('sm')]: {
       marginRight: theme.spacing(10),
       marginLeft: theme.spacing(0),
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
   title: {
     flexGrow: 1,
 
-    fontSize: '1.8rem',
+    fontSize: '2rem',
     fontFamily: 'Courgette',
 
     [theme.breakpoints.down('sm')]: {
