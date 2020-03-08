@@ -28,6 +28,8 @@ const useStyles = makeStyles(theme => ({
   content: {
 
     flex: '1 0 auto',
+    margin: '0 auto',
+    padding: '16px  10px 16px 10px'
 
   },
   typo: {
