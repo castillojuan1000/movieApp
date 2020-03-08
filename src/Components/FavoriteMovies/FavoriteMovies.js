@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     fontFamily: 'Courgette',
 
     [theme.breakpoints.down('sm')]: {
-      fontSize: '20px',
+      fontSize: '1.2rem',
     },
 
 

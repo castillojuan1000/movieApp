@@ -15,6 +15,10 @@ const useStyles = makeStyles(theme => ({
     height: 250,
     marginTop: '2vh',
     background: '#B5C588',
+    boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+    // background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    borderRadius: 3,
+
 
   },
   details: {
@@ -22,10 +26,19 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   content: {
+
     flex: '1 0 auto',
+
+  },
+  typo: {
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 15
+
+    },
   },
   cover: {
-    width: 250,
+    flexBasis: '40vh',
+    width: 290,
   },
 }));
 
@@ -38,24 +51,24 @@ const Movie = ({ title, year, poster, id, removeMovie, moreInfo }) => {
     <Card className={classes.root} >
       <div className={classes.details}>
         <CardContent className={classes.content}>
-          <Typography component="h5" variant="h6">
+          <Typography component="h5" variant="h6" className={classes.typo} >
             {title}
           </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
+          <Typography variant="subtitle1" color="textSecondary" className={classes.typo} style={{ marginTop: '1rem' }}>
             {year}
           </Typography>
         </CardContent>
-        <div className={classes.controls}>
 
-          <IconButton
-            aria-label="play/pause"
-            data-id={id}
-            onClick={removeMovie}>
 
-            <BackspaceIcon color='secondary' />
-          </IconButton>
+        <IconButton
+          aria-label="play/pause"
+          data-id={id}
+          onClick={removeMovie}>
 
-        </div>
+          <BackspaceIcon color='secondary' />
+        </IconButton>
+
+
       </div >
       <CardMedia
         className={classes.cover}
