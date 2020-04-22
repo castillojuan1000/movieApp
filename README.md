@@ -74,49 +74,8 @@ response body:
             "Type": "movie",
             "Poster": "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"
         },
-        {
-            "Title": "Spider-Man",
-            "Year": "2002",
-            "imdbID": "tt0145487",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
-        },
-        {
-            "Title": "The Amazing Spider-Man",
-            "Year": "2012",
-            "imdbID": "tt0948470",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Ant-Man",
-            "Year": "2015",
-            "imdbID": "tt0478970",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Spider-Man 2",
-            "Year": "2004",
-            "imdbID": "tt0316654",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Spider-Man 3",
-            "Year": "2007",
-            "imdbID": "tt0413300",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
-        },
-        {
-            "Title": "Spider-Man: Homecoming",
-            "Year": "2017",
-            "imdbID": "tt2250912",
-            "Type": "movie",
-            "Poster": "https://m.media-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SX300.jpg"
-        }
-    ],
+        
+    
     "totalResults": "9903",
     "Response": "True"
 }
