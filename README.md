@@ -1,68 +1,131 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Favorite Movies 
 
-## Available Scripts
+ ![Project Image](img/favoriteMovies.png)
 
-In the project directory, you can run:
+ > Share with us your favorites movies
 
-### `npm start`
+ ---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ ### Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+MovieApp is a small application created with the intentions of putting in practice the new react-hooks update. The idea is to search your favorites movies, and it will render an array of 8 movie objects matching the title of your movie. There's a like button that will save the movie to local storage. I added a Route to a favorites movies componets where it will get the data from local Storage, where you can also delete the movie if you do not longer like it. When you click on a poster movie on your Like page it will take you to a wikipidia page with the information of the movie you cliked on.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Technologies
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- React 
+- JavaScript 
+- Local Storage
+- Material-UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## How To Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Installation 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `git clone https://github.com/castillojuan1000/movieApp.git`
+- `npm install`
+- `npm run start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### API Resources 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- GET /movies
 
-## Learn More
+[Example: ](https://www.omdbapi.com/?s=man&apikey=57c3c48f)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+response body: 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascript 
+{
+    "Search": [
+        {
+            "Title": "Iron Man",
+            "Year": "2008",
+            "imdbID": "tt0371746",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Iron Man 3",
+            "Year": "2013",
+            "imdbID": "tt1300854",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjE5MzcyNjk1M15BMl5BanBnXkFtZTcwMjQ4MjcxOQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Iron Man 2",
+            "Year": "2010",
+            "imdbID": "tt1228705",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTM0MDgwNjMyMl5BMl5BanBnXkFtZTcwNTg3NzAzMw@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Man of Steel",
+            "Year": "2013",
+            "imdbID": "tt0770828",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Spider-Man",
+            "Year": "2002",
+            "imdbID": "tt0145487",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BZDEyN2NhMjgtMjdhNi00MmNlLWE5YTgtZGE4MzNjMTRlMGEwXkEyXkFqcGdeQXVyNDUyOTg3Njg@._V1_SX300.jpg"
+        },
+        {
+            "Title": "The Amazing Spider-Man",
+            "Year": "2012",
+            "imdbID": "tt0948470",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjMyOTM4MDMxNV5BMl5BanBnXkFtZTcwNjIyNzExOA@@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Ant-Man",
+            "Year": "2015",
+            "imdbID": "tt0478970",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMjM2NTQ5Mzc2M15BMl5BanBnXkFtZTgwNTcxMDI2NTE@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Spider-Man 2",
+            "Year": "2004",
+            "imdbID": "tt0316654",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BMzY2ODk4NmUtOTVmNi00ZTdkLTlmOWYtMmE2OWVhNTU2OTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Spider-Man 3",
+            "Year": "2007",
+            "imdbID": "tt0413300",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
+        },
+        {
+            "Title": "Spider-Man: Homecoming",
+            "Year": "2017",
+            "imdbID": "tt2250912",
+            "Type": "movie",
+            "Poster": "https://m.media-amazon.com/images/M/MV5BNTk4ODQ1MzgzNl5BMl5BanBnXkFtZTgwMTMyMzM4MTI@._V1_SX300.jpg"
+        }
+    ],
+    "totalResults": "9903",
+    "Response": "True"
+}
 
-### Code Splitting
+```
+--- 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Author Info
+ - LinkedIn [LinkedIn](https://www.linkedin.com/in/juan-m-castillo-355403186/)
+ - Website [JuanCastillo](https://juancastillo.dev/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ (Back To The Top)(#favorite-movies)
