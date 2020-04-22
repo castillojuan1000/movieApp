@@ -1,4 +1,4 @@
-#Favorite Movies 
+# Favorite Movies 
 
  ![Project Image](img/favoriteMovies.png)
 
@@ -128,4 +128,4 @@ response body:
  - LinkedIn [LinkedIn](https://www.linkedin.com/in/juan-m-castillo-355403186/)
  - Website [JuanCastillo](https://juancastillo.dev/)
 
- (Back To The Top)(#favorite-movies)
+ [Back To The Top](#favorite-movies)
