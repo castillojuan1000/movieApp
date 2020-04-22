@@ -39,7 +39,7 @@ MovieApp is a small application created with the intentions of putting in practi
 
 - GET /movies
 
-example: [Example](https://www.omdbapi.com/?s=man&apikey=57c3c48f)
+example: [https://www.omdbapi.com/?s=man&apikey=57c3c48f](https://www.omdbapi.com/?s=man&apikey=57c3c48f)
 
 response body: 
 
