@@ -16,7 +16,7 @@
 
 ## Description
 
-MovieApp is a small application created with the intentions of putting in practice the new react-hooks update. The idea is to search your favorites movies, and it will render an array of 8 movie objects matching the title of your movie. There's a like button that will save the movie to local storage. I added a Route to a favorites movies componets where it will get the data from local Storage, where you can also delete the movie if you do not longer like it. When you click on a poster movie on your Like page it will take you to a wikipidia page with the information of the movie you cliked on.
+MovieApp is a small application created with the intentions of putting in practice the new react-hooks update. The idea is to search your favorites movies, it will render an array of 8 movie objects matching the title of your movie. There's a like button that will save the movie to local storage. Favorites movies componets will get the data from local Storage, component where you can also delete the movie if you do not longer like it. When you click on a poster movie on your Like page it will take you to a wikipidia page with the information of the movie you cliked on.
 
 #### Technologies
 
@@ -33,13 +33,13 @@ MovieApp is a small application created with the intentions of putting in practi
 
 - `git clone https://github.com/castillojuan1000/movieApp.git`
 - `npm install`
-- `npm run start`
+- `npm start`
 
 ### API Resources 
 
 - GET /movies
 
-[Example: ](https://www.omdbapi.com/?s=man&apikey=57c3c48f)
+example: [Example](https://www.omdbapi.com/?s=man&apikey=57c3c48f)
 
 response body: 
 
