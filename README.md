@@ -5,6 +5,8 @@
  > Share with us your favorites movies
 
  ---
+## Demo
+ ![Project Image](movies.gif)
 
  ### Table of Contents
 
